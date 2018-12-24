@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Multipart input labeling (ARIA technique)</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Multipart input labeling (ARIA technique)</h1>
+        <p>Jonathan Pool</p>
+        <p>Revision date: 23 December 2018</p>
+      </header>
+      <section class="example">
+        <h2>Your retirement goals</h2>
+        <form>
+          <p class="downtight" id="expected-age">Expected retirement age:</p>
+          <p class="uptight">
+            <input
+              aria-labelledby="expected-age blank-ok youngest"
+              type="text"
+              size="3"
+              maxlength="3"
+            >
+          </p>
+          <p id="blank-ok">If you expect never to retire, leave blank. Otherwise, give your expected age as a whole number of years.</p>
+          <p class="tight" id="youngest">For a conservative plan, choose the youngest age at which you are likely to retire.</p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
